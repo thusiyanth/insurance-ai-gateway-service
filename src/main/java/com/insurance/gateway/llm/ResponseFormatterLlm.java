@@ -331,7 +331,7 @@ public class ResponseFormatterLlm {
 
         String policyNo = data.policy() != null ? data.policy().policyNumber() : "NEW";
         return buildReportJson("Official Policy Receipt", "Policy #" + policyNo + " — Issued Successfully",
-                "Policy Issued • Thank you for choosing Allianz Insurance", sections);
+                "Policy Issued • Thank you for choosing Test Insurance", sections);
     }
 
     public String formatPolicyCreationError(String userQuery, String errorReason) {
